@@ -5,6 +5,7 @@
 <!-- /badges -->
 
 # repodoctor
+> **English** · [README_EN.md](./README_EN.md)
 
 零依赖、单文件的 **Git 仓库卫生体检 CLI**。一键扫描你的 git 仓库，给出 0–100 健康分与可 actionable 的整改清单，可直接接 CI 门禁。
 
