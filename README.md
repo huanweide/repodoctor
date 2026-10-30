@@ -1,8 +1,19 @@
+<!-- badges -->
+[![Node](https://img.shields.io/badge/Node.js-≥16-339933?logo=node.js&logoColor=white)](https://nodejs.org)
+[![Zero-Deps](https://img.shields.io/badge/dependencies-zero-0f9d58?logo=npm&logoColor=white)](https://www.npmjs.com/)
+[![License](https://img.shields.io/github/license/huanweide/repodoctor)](LICENSE)
+<!-- /badges -->
+
 # repodoctor
 
 零依赖、单文件的 **Git 仓库卫生体检 CLI**。一键扫描你的 git 仓库，给出 0–100 健康分与可 actionable 的整改清单，可直接接 CI 门禁。
 
 `devdoctor` 只扫源码层明文密钥，`repodoctor` 补上 **git 层面** 的工程卫生——这是「代码健康 family」之外的第九轴。
+
+## 谁该用 / 谁先别用
+
+- **该用**：新接手仓库想快速发现 `.env` 泄露 / 大文件 / 缺 LICENSE；开源项目发布前体检；想在 CI 里做仓库卫生门禁。
+- **先别用**：已用 gitleaks + git-secrets 且密钥覆盖到位的人（可作互补）；纯本地、不公开、对 LICENSE 无所谓的项目。
 
 ## 为什么需要
 
@@ -72,6 +83,14 @@ GitHub Actions 示例：
 ## 零依赖说明
 
 仅使用 Node 内置模块 + 调用系统 `git` 二进制（仓库体检的本质前置）。不联网、不执行被测仓库的任何代码，纯只读分析。
+
+## ⭐ 给个 Star
+
+如果 repodoctor 帮你拦住过一次 `.env` 误提交或密钥泄露，欢迎点个 Star ⭐：https://github.com/huanweide/repodoctor
+
+## 作者
+
+由 [huanweide](https://github.com/huanweide) 维护。
 
 ## License
 
